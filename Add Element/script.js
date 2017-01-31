@@ -3,6 +3,8 @@
 
 // $(() => {}); // JQuery on ready short form
 
+//J-QUERY
+
 // $(() => {
 //     let result = $('#result');
 
@@ -29,6 +31,7 @@
 
 // });
 
+//Java Script
 document.addEventListener('DOMContentLoaded', (event) => {
 
     let result = document.getElementById('result');
