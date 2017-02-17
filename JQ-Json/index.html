@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doc</title>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Begin in Hell Of jQuery!</h1>
+            <button id='loadData' type="button" class="btn btn-primary  btn-lg btn-block">Load data</button>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h3 class="text-center">
+                <span class="pull-left">
+                     <input id="serchBox"  type="text" class="form-control" placeholder="Search">
+                </span> 
+                Movies
+
+                <span class="pull-right">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#addMovieModal">
+                                    Add Movie
+                                </button>
+                    </span>
+                </h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center">No.</th>
+                            <th class="text-center"><a id="sort" href="#" >Movie name</a></th>
+                            <th class="text-center">Edit</th>
+                            <th class="text-center">Delete</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="movieList">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th class="text-center" colspan="2">
+                                Result
+                            </th>
+                            <th id="movieLength" class="text-center" colspan="2">
+
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+
+
+
+                <!--Add Movie Modal -->
+                <div class="modal fade" id="addMovieModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="text-center modal-title" id="myModalLabel">Add New Movie</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1">Movie Name</span>
+                                    <input id="addMovieName" type="text" class="form-control" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id='closeModal' type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                                <button id='saveMovie' type="button" class="btn btn-success">Save movie</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--End Movie Modal-->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and Bottstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
